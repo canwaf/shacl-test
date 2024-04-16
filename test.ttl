@@ -19,4 +19,10 @@
     sh:not [
         sh:class qb:DataSet ;
         sh:message "A dcat:Dataset cannot also be a qb:DataSet, a dcat:Dataset has dcat:distributions which can be a qb:DataSet." ;
+    ] ;
+    sh:targetClass dcat:Dataset ;
+    sh:property [
+        sh:path dcat:distribution ;
+        sh:class qb:DataSet ;
+        sh:minCount 1 ;
     ] .
