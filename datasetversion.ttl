@@ -75,30 +75,4 @@
 
 
 
-        <#DatasetShape> a sh:NodeShape ;
-    sh:targetClass dcat:Distribution ;
-      sh:property [
-        sh:path dcterms:identifier ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:message "A dcat:Distribution must have a dcterms:identifier." ; 
-        ]:
-        sh:property [
-        sh:path dcterms:created ;
-        sh:datatype xsd:dateTime ;
-        sh:minCount 1 ;
-        sh:message "A dcat:Distribution must have a dcterms:created." ; 
-        ];
-        sh:property [
-        sh:path dcterms:creator ;
-        sh:foaf:Agent ;
-        sh:minCount 1 ;
-        sh:message "A dcat:Distribution must have a dcterms:creator." ; 
-        ];
-        sh:property [
-        sh:path dcterms:issued ;
-        sh:datatype xsd:dateTime ;
-        sh:minCount 1 ;
-        sh:message "A dcat:Distribution must have a dcterms:issued." ; 
-        ]
       
